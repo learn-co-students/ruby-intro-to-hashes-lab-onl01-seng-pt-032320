@@ -58,8 +58,13 @@ def monopoly_with_third_tier
 end
 
 #copy and past the monopoly hash you build in the previous method. We're going to add stuff to it here!
-
-
+# 
+# fourth level of monopoly hash
+#    #monopoly_with_fourth_tier
+#      sets the 1st key of the :reading_railroad hash to a string, 'mortgage_value', whose value is '$100'
+#      sets the 1st key of the :pennsylvania_railroad hash to a string, 'mortgage_value', whose value is '$200'
+#      sets the 1st key of the :b_and_o_railroad hash to a string, 'mortgage_value', whose value is '$400'
+#      sets the 1st key of the :shortline hash to a string, `mortgage_value`, whose value is '$800'
 
 def monopoly_with_fourth_tier
   monopoly = {
@@ -68,7 +73,8 @@ def monopoly_with_fourth_tier
       names: {reading_railroad: {"mortgage_value" => "$100"},
       pennsylvania_railroad: {"mortgage_value" => "$200"},
       b_and_o_railroad: {"mortgage_value" => "$400"},
-      shortline: {"mortgage_value" => "$800"}},
+      shortline: {"mortgage_value" => "$800"}
+    },
       rent_in_dollars: {one_piece_owned: 25, two_pieces_owned: 50, three_pieces_owned: 100, four_pieces_owned: 200},
     },
   }
